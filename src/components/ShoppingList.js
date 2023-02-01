@@ -11,10 +11,8 @@ function ShoppingList({ items }) {
 
   const itemsToDisplay = items.filter((item) => {
     if (selectedCategory === "All") {
-      console.log("true")
       return true
     } else {
-      console.log(selectedCategory)
       return item.category === selectedCategory
     }
   })
