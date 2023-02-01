@@ -10,6 +10,10 @@ function App() {
   // this will be used for the Dark Mode Toggle feature
   const appClass = isDarkMode ? "App dark" : "App light"
 
+  function handleDarkMode() {
+    setDarkMode(!isDarkMode)
+  }
+
 
   return (
     <div className={appClass}>
